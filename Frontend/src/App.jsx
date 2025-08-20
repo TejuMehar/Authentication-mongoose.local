@@ -4,13 +4,12 @@ import Login from "./pages/Login.jsx";
 
 function App() {
   return (
-    <Router>
+ <Router>
       <Routes>
-        {/* index route */}
-        <Route path="/" element={<Signup />}>
-          <Route index element={<Signup />} /> 
-          <Route path="login" element={<Login />} />
-        </Route>
+      
+        <Route path="/" element={<Signup />} />
+        
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
   );
